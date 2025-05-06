@@ -1,0 +1,410 @@
+/* CONTAINER PRINCIPAL */
+.container {
+  width: 412px;
+  height: 917px;
+  margin: 0 auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* CARRINHO (Texto + Seta) */
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.cart-title {
+  color: var(--color-grey-20, #333333);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  word-wrap: break-word;
+}
+
+.clear-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1px;
+  padding-right: 6px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: #ffffff;
+  margin-left: auto;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.clear-text {
+  text-align: center;
+  color: var(--color-red-49, #000000);
+  font-size: 13px;
+  font-weight: 600;
+  word-wrap: break-word;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ITEM DO CARRINHO */
+.item-wrapper {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.item-icon {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  border-radius: 8px;
+  background: var(--color-cyan-50, #00FFFF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.item-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.item-price {
+  font-size: 13px;
+  color: #666;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.item-box {
+  display: flex;
+  margin-top: 3%;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border-radius: 8px;
+  padding: 5px 10px;
+  outline: 1px solid #ccc;
+}
+
+.quantity-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.plus-button {
+  width: 24px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item-details {
+  padding-left: 53px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  color: #333333;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle {
+  color: #808080;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.observation {
+  color: #333333;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* CONTAINER INFERIOR COM BOTÕES */
+.inner-container {
+  width: 384px;
+  max-width: 768px;
+  margin-top: auto;
+  padding: 10px;
+  background-color: #ffffff;
+  border-top: 2px solid var(--color-grey-92, #ffffff);
+  box-shadow: 0px -15px 45px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* BOTÃO 'ADICIONAR MAIS PRODUTOS' */
+.add-product-button {
+  margin-bottom: 1%;
+  width: 300px;
+  min-width: 350px;
+  min-height: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  outline: 2px solid var(--Schemes-On-Primary-Container, #4F378A);
+  outline-offset: -2px;
+  display: bottom-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-product-text {
+  flex: 1 1 0;
+  color: var(--Schemes-On-Primary-Container, #4F378A);
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  word-wrap: break-word;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* BOTÃO 'AVANÇAR' */
+.button-container {
+  margin-bottom: 1%;
+  width: 370px;
+  min-width: 200px;
+  min-height: 10px;
+  padding: 12px 10px 18px;
+  background: var(--Schemes-On-Primary-Container, #4F378A);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-text {
+  color: var(--color-white-solid, white);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  word-wrap: break-word;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.price-container {
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.price-text {
+  color: var(--color-white-solid, white);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: right;
+  word-wrap: break-word;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* tela 2*/
+/* Container principal que envolve toda a tela (tela 2) */
+/* Estilos para o contêiner principal */
+.container2 {
+  width: 412px;
+  height: 917px;
+  margin: 0 auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  padding-top: 20px;
+}
+
+/* Cartão de pedido */
+.order-card {
+  width: 375px;
+  height: 120px;
+  padding: 16.67px;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  outline: 1px solid #ffffff;
+  outline-offset: -1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Cabeçalho do pedido */
+.order-header {
+  align-self: stretch;
+  padding-right: 0.01px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 89.83px;
+}
+
+/* Informações do pedido */
+.order-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Detalhes do pedido */
+.info-text {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4.01px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+}
+
+.order-number {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.order-date {
+  color: #808080;
+  font-size: 12px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Item do pedido */
+.order-item {
+  align-self: stretch;
+  outline: 1px solid #D9D9D9;
+  outline-offset: -1px;
+  display: flex;
+  flex-direction: row; /* Alterado para alinhar os itens horizontalmente */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px; /* Ajusta o espaço entre a quantidade e o tamanho */
+}
+
+
+/* Botão para realizar ações (ex: "Acompanhar pedido") */
+.button-container {
+  align-self: stretch;
+  min-width: 10px;
+  min-height: 20px;
+  padding: 10px 1px ;
+  background: #4F378A;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  margin-top: auto;
+}
+
+/* Texto dentro do botão */
+.button-text {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  word-wrap: break-word;
+  display: inline-block; 
+  text-align: center; 
+
+}
+
+/* Rodapé de navegação */
+.bottom-nav {
+  width: 100%;
+  height: 80px;
+  background: var(--color-white-solid, rgb(255, 255, 255));
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Itens de navegação */
+.nav-item {
+  width: 50px;
+  height: 60px;
+  padding-top: 2px;
+  border-top: 2px solid var(--color-white-solid, white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.nav-item.active {
+  border-top: 2px solid var(--Schemes-On-Primary-Container, #4F378A);
+}
+
+/* Wrapper do ícone */
+.icon-wrapper {
+  position: relative;
+}
+
+/* Rótulo de navegação */
+.nav-label {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--color-grey-50, #808080);
+}
+
